@@ -1,0 +1,25 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <canvas id="paper" width="600" height="600">
+
+        </canvas>
+    </body>
+    <script>
+            let canvas = document.getElementById("paper")
+            let ctx = canvas.getContext('2d')
+            ctx.lineWidth = 10;
+            ctx.fillStyle = 'black'
+            ctx.strokeRect(100,100,500,350)
+            ctx.beginPath();
+            ctx.arc(350, 100, 50, 0, 1 * Math.PI);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(350, 450, 50, 0, 1 * Math.PI);
+            ctx.closePath();
+            ctx.stroke();
+        </script>
+</html>
